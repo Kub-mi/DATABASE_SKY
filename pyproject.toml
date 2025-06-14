@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "database-sky"
+version = "0.1.0"
+description = ""
+authors = ["Михаил"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.32.4"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^6.0.1"
+black = "^25.1.0"
+flake8 = "^7.2.0"
+mypy = "^1.16.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
