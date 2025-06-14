@@ -1,3 +1,5 @@
+from typing import List, Tuple
+
 import psycopg2
 from .postgres import DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT
 
