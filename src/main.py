@@ -1,6 +1,6 @@
 from src.api import HHApi
 from src.db import create_database, create_tables, DBManager
-from psycopg2.errors import UniqueViolation
+#from psycopg2.errors import UniqueViolation
 
 def main():
     # 1. Создание БД и таблиц
@@ -10,8 +10,16 @@ def main():
 
     # 2. Сбор и заполнение данных о работодателях и вакансиях
     employer_ids = [
-        '3529', '1740', '78638', '1006202', '2180',
-        '3776', '87021', '1379', '15478', '39305'
+        "3529",  # СБЕР
+        "1740",  # Яндекс
+        "78638",  # Тинькофф
+        "39305",  # Альфа-Банк
+        "2180",  # ВТБ
+        "4181",  # Газпром нефть
+        "67611",  # Mail.ru Group (VK)
+        "3127",  # Росатом
+        "6040",  # МТС
+        "3776"  # X5 Group
     ]
     dbm = DBManager()
     for emp_id in employer_ids:
